@@ -1,0 +1,21 @@
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding-top: 3rem;
+  overflow: hidden;
+}
+.App {
+  font-family: sans-serif;
+  /* text-align: center; */
+}
+
+button{
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.task{
+  display: flex;
+}

@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './style.css';
 
-function App() {
+const App = () => {
+  const [input, setInput] = useState('');
+  const [tasks, setTasks] = useState([]);
+
+  function handleAdd() {
+    setTasks([...tasks, input]);
+    setInput('');
+  }
+
+  function handleDelete(id) {
+    const updateTasks = tasks.filter((task, index) => index !== id);
+    setTasks(updateTasks);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <input type='text' value={input} onChange={(e) => setInput(e.target.value)} />
+      <button onClick={handleAdd}>Add</button>
+      <ul>
+        {tasks.map((task, index) => (
+          <li key={index}>
+            {task} <button onClick={() => handleDelete(index)}>X</button>
+          </li>
+        ))}
+      </ul>
     </div>
   );
-}
-
+};
 export default App;
