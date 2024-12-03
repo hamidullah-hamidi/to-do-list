@@ -1,21 +1,30 @@
-body{
+body {
   height: 100vh;
   display: flex;
   justify-content: center;
   /* align-items: center; */
   padding-top: 3rem;
   overflow: hidden;
+  background: linear-gradient(to right bottom, red, blue);
 }
 .App {
   font-family: sans-serif;
   /* text-align: center; */
 }
 
-button{
+button {
   margin-left: 1rem;
   cursor: pointer;
 }
 
-.task{
+.task {
   display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+li{
+  color: #ffff;
 }
