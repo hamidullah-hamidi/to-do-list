@@ -28,7 +28,7 @@ ul {
 li {
   color: #ffff;
   background: linear-gradient(to right bottom, red, blue);
-  border-radius: ;
+  border-radius: 30px;
 }
 
 input {
