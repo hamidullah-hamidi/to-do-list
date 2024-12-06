@@ -29,6 +29,8 @@ li {
   color: #ffff;
   background: linear-gradient(to right bottom, red, blue);
   border-radius: 30px;
+  margin: 10px 0;
+  padding: 5px 20px;
 }
 
 input {
