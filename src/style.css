@@ -21,11 +21,9 @@ button {
   display: flex;
 }
 
+li,
 ul {
   list-style: none;
-}
-
-li {
   color: #ffff;
   background: linear-gradient(to right bottom, red, blue);
   border-radius: 30px;
