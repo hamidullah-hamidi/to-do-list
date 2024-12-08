@@ -29,6 +29,7 @@ ul {
   border-radius: 30px;
   margin: 10px 0;
   padding: 5px 20px;
+  border: 1px solid #ffff;
 }
 
 input {
